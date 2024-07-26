@@ -8,6 +8,6 @@ module.exports = {
 		.setDescription('just moans super loudly'),
 	async execute(interaction) {
         const moans = ["UNGHHH~", "DYADDY ;)", "FUCHHHHHK"]
-		await interaction.reply(moans[Math.floor(Math.random()) + 1]);
+		await interaction.reply(moans[Math.floor(Math.random() * 2) + 1]);
 	},
 };
